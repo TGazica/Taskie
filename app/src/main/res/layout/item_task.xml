@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/textview_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Title"/>
+
+    <TextView
+        android:id="@+id/textview_item_dueDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_item_title"
+        android:layout_marginStart="5dp"
+        android:textSize="12sp"
+        android:text="@string/textview_item_dueDate"
+        />
+
+    <TextView
+        android:id="@+id/textview_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_item_title"
+        android:layout_toEndOf="@+id/textview_item_dueDateText"
+        android:layout_marginStart="2dp"
+        android:textSize="12sp"
+        android:text="12.12.2012."
+        />
+
+    <TextView
+        android:id="@+id/textview_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview_item_dueDateText"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="5dp"
+        android:text="Description"
+        />
+
+    <ImageButton
+        android:id="@+id/imagebutton_item_priority"
+        android:layout_height="80dp"
+        android:layout_width="70dp"
+        android:layout_alignParentEnd="true"
+        android:background="#9ACF56"
+        android:contentDescription="@string/imageview_item_taskImportance"
+        />
+
+    <ToggleButton
+        android:id="@+id/togglebutton_item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/imagebutton_item_priority"
+        android:textOn="Complete"
+        android:textOff="In progress"/>
+
+
+</RelativeLayout>
