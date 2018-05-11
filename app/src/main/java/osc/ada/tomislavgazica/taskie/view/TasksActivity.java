@@ -1,6 +1,5 @@
 package osc.ada.tomislavgazica.taskie.view;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -183,9 +182,9 @@ public class TasksActivity extends AppCompatActivity implements TaskClickListene
 
     @Override
     public void onLongClick(Task task) {
-        EditTaskDialogFragment editTaskDialogFragment = new EditTaskDialogFragment(this);
-        editTaskDialogFragment.setTask(task);
-        editTaskDialogFragment.setListener(this);
+        EditTaskDialog editTaskDialog = new EditTaskDialog(this);
+        editTaskDialog.setTask(task);
+        editTaskDialog.setListener(this);
     }
 
     @Override

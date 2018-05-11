@@ -10,7 +10,7 @@ import android.widget.TextView;
 import osc.ada.tomislavgazica.taskie.R;
 import osc.ada.tomislavgazica.taskie.model.Task;
 
-public class EditTaskDialogFragment extends Dialog implements View.OnClickListener {
+public class EditTaskDialog extends Dialog implements View.OnClickListener {
 
     TextView edit;
     TextView delete;
@@ -19,7 +19,7 @@ public class EditTaskDialogFragment extends Dialog implements View.OnClickListen
 
     EditTaskClickListener listener;
 
-    public EditTaskDialogFragment(@NonNull Context context) {
+    public EditTaskDialog(@NonNull Context context) {
         super(context);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.setContentView(R.layout.dialog_edit_task);
